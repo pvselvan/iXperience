@@ -1,0 +1,132 @@
+/*h1{
+	text-align: center;
+	color: blue;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.jobs{
+	color: red;
+	display: none;
+}*/
+h1{
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 10px;
+    }
+    body {
+      text-align: center;
+      background: url("http://campusinfo.umich.edu/files/campusinfo/field/image/IMG_1105.JPG");
+      background-size: cover;
+      background-position: center;
+      background-attachment:fixed;
+      color: rgba(0, 0, 0, .8);
+      font-family: 'Corben', Georgia, Times, serif;
+    }
+    div {
+      float: left;
+      display: inline-block;
+      height: 140px;
+      width: 50%;
+      margin: 20px 0 20px 0;
+    }
+    p {
+      font-family: 'Nobile', Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 10px;
+      background: black;
+      background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+      padding: 10px;
+      bottom: 0;
+      margin: 0;
+      height: 30px;
+      transition: height .5s;
+      -webkit-transition: height .5s;
+      -moz-transition: height .5s;
+    }
+    
+    .about{
+      color: #94FFFF;
+    }
+    
+    .whycode{
+      color: #CCCCFF;
+    }
+    
+    .southafrica{
+      color: #CCCCFF;
+    }
+    
+    .cool{
+      color: #94FFFF;
+    }
+    
+    .images{
+      height: 300px;
+      width: 800px;
+      display: inline;
+      float: none;
+      margin: 0 auto;
+    }
+    small {
+      opacity: 0;
+    }
+    
+    .show-description p {
+      height: 110px;
+    }
+
+    .show-description small {
+      opacity: 1;
+    }
+
+    #gifs {
+    display:inline;
+    border:2px solid black;
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+    width: 500px;
+    color: white;
+    font-size: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+}
+
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 30px;
+      margin-top: 20px;
+      line-height: 50px;
+    }
+    h2 {
+      font-size: 25px;
+      margin: 0;
+    }
+    p {
+      color: #94FFFF;
+    }
+    div {
+      width: 300px;
+      display: block;
+      float: none;
+      margin: 0 auto;
+    }
+    #first{
+      display: none;
+    }
+    #third{
+      display: none;
+    }
+    p {
+      font-size: 18px;
+    }
+    small {
+      font-size: 14px;
+    }
+}

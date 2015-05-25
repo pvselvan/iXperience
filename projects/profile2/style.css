@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 300 16px/1.4 'Open Sans', Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #41acff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #358dd4;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.full {
+  width: 100%;
+}
+
+img.bordered {
+  border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+h1, h2 {
+  color: rgba(0, 0, 0, .8);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.end_container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(245, 235, 204, .5);
+}
+
+.howzit {
+  color: #00E6B8;
+}
+
+.main-head {
+  font-size: 120px;
+  line-height: 1.2;
+  margin: 40px 0;
+  text-align: center;
+  text-shadow: 2px 2px #00FFCC;
+}
+
+.left {
+  width: 439px;
+  padding: 20px 20px 20px 10px;
+  border-top: 10pt solid rgba(128, 0, 0, .6);
+  border-left: 10pt solid rgba(128, 0, 0, .6);
+  border-bottom: 10pt solid rgba(128, 0, 0, .6);
+  float: left;
+  font-family: 'Josefin Slab', serif;
+  background-image: url("http://compustition.com/projects/instructions_for_peace_booklet/images/bg_beige.jpg");
+  background-size: cover;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.right {
+  width: 439px;
+  height: 458.156px;
+  padding: 20px 0 20px 20px;
+  border-top: 10pt solid rgba(128, 0, 0, .6);
+  border-right: 10pt solid rgba(128, 0, 0, .6);
+  border-left: 5pt solid rgba(128, 0, 0, .6);
+  border-bottom: 10pt solid rgba(128, 0, 0, .6);
+  float: left;
+  font-family: 'Josefin Slab', serif;
+  background-image: url("http://compustition.com/projects/instructions_for_peace_booklet/images/bg_beige.jpg");
+  background-size: cover;
+}
+
+#wrapper1 {
+  width:280px;
+  height:400px;
+  display: inline-block;
+  padding: 10px 0px 0px 40px;
+}
+
+#wrapper2 {
+  width:580px;
+  height:380px;
+  display: inline-block;
+  padding: 10px 0px 0px 20px;
+}
+
+#wrapper3 {
+  width:860px; 
+  height:580px;
+  display: inline-block;
+  padding: 0px 0px 0px 50px;
+}
+
+#wrapper1 .text {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapper2 .text {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapper3 .text {
+position:relative;
+bottom:575px;
+left:0px;
+visibility:hidden;
+font-size: 24px;
+}
+
+#wrapper1:hover {
+  opacity: .7;
+}
+
+#wrapper2:hover {
+  opacity: .7;
+}
+
+#wrapper3:hover {
+  opacity: .7;
+}
+
+#wrapper1:hover .text {
+visibility:visible;
+color: white;
+transition: background-color .5s ease;
+background-color:rgba(0, 0, 0, 1);
+border-radius: .5;
+text-align: center;
+}
+
+#wrapper2:hover .text {
+visibility:visible;
+color: white;
+transition: background-color .5s ease;
+background-color:rgba(0, 0, 0, 1);
+border-radius: .5;
+text-align: center;
+}
+
+#wrapper3:hover .text {
+visibility:visible;
+color: white;
+transition: background-color .5s ease;
+background-color:rgba(0, 0, 0, 1);
+border-radius: .5;
+text-align: center;
+}
+
+.kicker {
+  font-size: 120%;
+  font-style: italic;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-head {
+  margin: 20px 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<script src="/assets/jquery.js"></script>
+
+  <title>Pavi Vetriselvan</title>
+  
+  <script>
+    function displayGreeting () {
+      var d = new Date();
+      var hours = d.getHours();
+
+      if (hours < 12)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Morning!";
+      }
+      else if (hours < 17)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Afternoon!";     
+      }
+      else
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Evening!";
+      }
+    }
+
+    function changeImage (image) {
+
+    document.getElementById("gifs").style.backgroundImage = "url("+image.src+")";
+    document.getElementById("gifs").innerHTML = image.alt;
+
+    }
+
+    function emptyDiv (image) {
+
+    document.getElementById("gifs").style.backgroundImage = "url()";
+    document.getElementById("gifs").innerHTML = "Choose a GIF";
+
+    }
+
+    $('div').on('click', function() {
+        $(this).toggleClass('show-description');
+    });
+
+  </script>
+</head>
+
+<body onload = "displayGreeting();">
+  <h1>Pavithra Vetriselvan</h1>
+  <h2>Greeting Here</h2>
+  
+  <div class="images">
+  
+    <div id="first" class="images">
+    <img src=http://mhacks.org/img/mhvlogo.png alt="MHacks" style="display:inline-block;margin: 0px 50px 50px 0px; width: 200px;height:200px;"></div>
+    <div id="second" class="images">
+    <img src="http://i.imgur.com/lFJHxqQ.jpg" alt="optiMize" style="display:inline-block;margin: 0 auto;width:210px;height:300px;border-radius:25px;border:2px solid #33CCFF;"></div>
+    <div id="third" class="images">
+    <img src=http://meucerebro.com/wp-content/uploads/2014/10/vector-creative-brain.png alt="MHacks" style="display:inline-block;margin: 0px 0px 50px 50px; width: 200px;height:200px;"></div>
+  </div>
+  
+  <div class="about">
+  <p>A Little About Me!<br />
+  <small>I'm now a junior studying Computer Science and Art at the University of Michigan. GO BLUE :D! I'm very interested in social entrepreneurship and am excited to see how code can change the world.</small></p>
+  </div>
+  
+  <div class="whycode">
+  <p>So, Why Code?<br />
+  <small>Code is a tool that lets you write your story with technology. It is a way for us to bring our ideas to life in a very powerful and creative way. I code and create in hopes that I will inspire a generation of women to pursue this field.</small></p>
+  </div>
+  
+  <div class="southafrica">
+  <p>Why South Africa?<br />
+  <small>I've only ever visit two countries, India and the United States. I'm excited to immerse myself in South African culture while exploring everything that the beautiful city of Capetown has offer (food, physical activites, etc)! </small></p>
+  </div>
+  
+  <div class="cool">
+  <p>Something you didn't know...<br />
+  <small>I have a borderline unhealthy obsession with owls, shown through my gross amount of owl paraphernalia, and Harry Potter (surpise, surprise). I can also make a three leaf clover with my tongue!</small></p>
+  </div>
+
+  <div id="gifs">Work Hard, Play Hard... While Trying to Survive</div>
+
+  <div class="gifss">
+  <img src="images/shark.gif" alt="Yayyy... sharks" onmouseover="changeImage(this);" onmouseout="emptyDiv();" style="display:inline; height: 180px; width: 300px;"/>
+
+  <img src="images/gopro.gif" alt="This will totally not happen" onmouseover="changeImage(this);" onmouseout="emptyDiv();" style="display:inline; height: 180px; width: 300px;"/>
+
+  <img src="images/safari.gif" alt="<3" onmouseover="changeImage(this);" onmouseout="emptyDiv();" style="display:inline; height: 180px; width: 300px;"/>
+  </div>
+
+</body>

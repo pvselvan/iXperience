@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>Pavi Vetriselvan</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- google.com/fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+  <!-- Tab icon, known as "favicon" -->
+  <link rel="shortcut icon" href="http://www.theaplifeproject.com/wp-content/uploads/2014/07/favicon3.png">
+
+  <script>
+    function displayGreeting () {
+      var d = new Date();
+      var hours = d.getHours();
+
+      if (hours < 12)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Morning!";
+      }
+      else if (hours < 17)
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Afternoon!";     
+      }
+      else
+      {
+        document.getElementsByTagName("h2")[0].innerHTML = "Good Evening!";
+      }
+    }
+
+    function changeHeading (heading) {
+      document.getElementsByTagName("h3")[0].innerHTML = "howzit, howzit, howzit bruhhh?"
+    }
+
+    function restoreHeading (heading) {
+      document.getElementsByTagName("h3")[0].innerHTML = "howzit, bruh?"
+    }
+
+
+  </script>
+</head>
+<body onload = "displayGreeting();">
+  <!-- 
+  The bru is a complex bru,
+    so his page will be split into two.
+  On the left,
+    a professional life showcase,
+  On the right,
+    his playful side will find its place.
+  -->
+  <div class="header">
+    <div class="end_container">
+      <h1 class="main-head"> PAV<span style="color: #FF3399; text-shadow:black;">i</span> <img src="book.png" alt="logo" style="width:200px;height:100px"><br>VETR<span style="color: #FF3399; text-shadow:black;">i</span>SELVAN</h1>
+      <h2>Greeting Here</h2>
+      <h3 class="howzit" onmouseover="changeHeading(this)" onmouseout="restoreHeading(this)">howzit, bruh?</h3>
+    </div>
+  </div>
+  <div class="container">
+    <div class="left">
+      <h1>A Page From My Story</h1>
+      <div class="about">
+        <h3>A little about me...</h3>
+        <p>
+          I've always been fascinated by stories. As a reader, a writer, and an (amateur) photographer, I'm constantly 
+          curious about the world around us and enjoy learning more every day. 
+        </p>
+        <p>
+          I believe code is a tool that lets you write your story with technology. It is a way for us to bring our ideas to
+          life in a very powerful and creative way. I code, I create, in hopes that I will inspire a generation of women 
+          to pursue this field and succeed. 
+        </p>
+        <p>
+          I never once thought I'd end up halfway across the country at The University of Michigan. I thought it even less likely that I'd pursue Computer Science. After two years, it's hard to see myself doing anything else. Finding the intersection between social impact and technology has given me a fierce determination to change the world... one line of code at a time!
+        </p>
+      </div>
+    </div>
+    <div class="right">
+      <h1>Still A Work In Progress</h1>
+      <div class="project">
+        <h3>and what I love to do!</h3>
+        <p>
+          Check out some cool things I've been working on:
+        </p>
+        <p>
+        <ul>
+          <li><a href="http://www.huffingtonpost.com/pavithra-vetriselvan-/" target="_blank">The Huffington Post</a><br>
+              I'm currently a student blogger!</li>
+          <li><a href="https://medium.com/@pavithravetriselvan" target="_blank">Medium</a><br>
+              Where I'm free to vent and preech to anyone who is willing to listen.</li>
+          <li><a href="http://mhacks.org/" target="_blank">MHacks 6</a><br>
+              Current UX Director of the nation's premier collegiate hackathon!</li>
+          <li><a href="https://www.optimizemichigan.org/" target="_blank">optiMize</a><br>
+              Current VP Community of Michigan's social innovation organiztion :)</li>
+        </ul>
+        </p>
+        <h3>The journey continues in Cape Town...</h3>
+      </div>
+    </div>
+    <!-- A common way to solve the float-height problem. Check the CSS. -->
+    <div class="clearfix"></div>
+  </div>
+  <div class="end_container">
+    <div id="wrapper1">
+      <img src="propic.jpg" class="full bordered" style="width:280px; height:400px;">
+      <p class="text">optiMizing my impact at Diag Day!</p>
+    </div>
+    <div id="wrapper2">
+      <img src="codecamp.jpg" class="full bordered" style="width:580px; height:380px;">
+      <p class="text">spent an amazing 5 days with 22 incredible women in engineering!</p>
+    </div>
+    <div id="wrapper3">
+      <img src="squareme.jpg" class="full bordered" style="width:860px; height:580px;">
+      <p class="text">my "professional" headshot</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="end_container">
+        <div id="media">
+        <a href="https://twitter.com/pavijuicepotion" target="_blank">
+        <img title="Twitter" alt="Twitter" src="https://socialmediawidgets.files.wordpress.com/2014/03/01_twitter.png" width="35" height="35" />
+        </a>
+        <a href="https://www.pinterest.com/pavi95/" target="_blank">
+        <img title="Pinterest" alt="Pinterest" src="https://socialmediawidgets.files.wordpress.com/2014/03/13_pinterest.png" width="35" height="35" />
+        </a>
+        <a href="https://www.facebook.com/pavithra.vetriselvan" target="_blank">
+        <img title="Facebook" alt="Facebook" src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook.png" width="35" height="35" />
+        </a>
+        <a href="https://www.linkedin.com/pub/pavithra-vetriselvan/a9/899/775" target="_blank">
+        <img title="LinkedIn" alt="LinkedIn" src="https://socialmediawidgets.files.wordpress.com/2014/03/07_linkedin.png" width="35" height="35" />
+        </a>
+        <a href="https://instagram.com/pavijuicepotion/" target="_blank">
+        <img title="Instagram" alt="RSS" src="https://socialmediawidgets.files.wordpress.com/2014/03/10_instagram.png" width="35" height="35" />
+        </a>
+        </div>
+      <h4 class="footer-head">
+        Let's Connect! 
+      </h4>
+      <p class="caption">&copy; Pavithra Vetriselvan</p>
+    </div>
+  </div>
+</body>
+</html>
