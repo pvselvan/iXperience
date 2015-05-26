@@ -4,15 +4,26 @@ class ArticlesController < ApplicationController
 		@articles = Article.all
 	end
 
-	#show
+	def show
+		@article = Article.find(params[:id])
+	end
 
 	def new
-		#@article = Article.new
+		@article = Article.new
 	end
 
 	def create
-		render plain: params['article'].inspect
+		@article = Article.new(article_params)
+		#render plain: params['article'].inspect
+		@article.save
+		redirect_to @article
 	end
+
+	#STRONG PARAMETERS
+	def article_params
+		params.require(:article).permit(:title, :text) #will strip out any other parameters
+	end
+
 
 	#update
 
